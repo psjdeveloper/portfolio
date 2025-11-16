@@ -58,13 +58,14 @@ export default function Nav() {
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
             <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
               className="block px-6 py-3 hover:bg-blue-600"
             >
               {item}
             </Link>
           ))}
+          
         </motion.div>
       )}
     </nav>
